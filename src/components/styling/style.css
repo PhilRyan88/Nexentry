@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.large-header {
+  position: relative;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+    url("https://w.wallhaven.cc/full/2k/wallhaven-2k977g.jpg");
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  top: 20px;
+  max-width: 1300px;
+  min-width: 400px;
+  height: 500px;
+  margin-top: 60px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.main-title {
+  position: absolute;
+  width: 100%;
+  color: #1b1e7b;
+  text-align: center;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+.main-titlep {
+  position: absolute;
+  color: #585dff;
+  text-align: center;
+  bottom: 300px;
+  font-family: hanson;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2em;
+  line-height: 1.6em;
+
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.main-titleb {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 12px 30px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-titleb:hover {
+  transform: translate(-50%, -3px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 1024px) {
+  .large-header {
+    height: 400px;
+  }
+
+  .main-title {
+    font-size: 2.5em;
+  }
+
+  .main-titlep {
+    font-size: 1.1em;
+    width: 90%;
+  }
+
+  .main-titleb {
+    font-size: 1em;
+    padding: 12px 25px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .large-header {
+    height: 350px;
+  }
+
+  .main-title {
+    font-size: 2.2em;
+  }
+
+  .main-titlep {
+    font-size: 1em;
+    width: 90%;
+  }
+
+  .main-titleb {
+    font-size: 0.9em;
+    padding: 10px 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .large-header {
+    height: 300px;
+  }
+
+  .main-title {
+    font-size: 1.8em;
+  }
+
+  .main-titlep {
+    font-size: 0.9em;
+  }
+
+  .main-titleb {
+    font-size: 0.8em;
+    padding: 8px 18px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .large-header {
+    height: 250px;
+  }
+
+  .main-title {
+    font-size: 1.6em;
+  }
+
+  .main-titlep {
+    font-size: 0.8em;
+  }
+
+  .main-titleb {
+    font-size: 0.7em;
+    padding: 8px 15px;
+  }
+}
